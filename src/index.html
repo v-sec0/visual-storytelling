@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Story Telling</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+
+    <!-- Making container for data -->
+    <div class="container my-5 sticky-top" id="title-container">
+        <div class="row text-center" id="title-row">
+            <h1 id="title-text">Danger on the Highway!</h1>
+        </div>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" id="fast-link" aria-current="page" href="#">Fast Facts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="slow-link" href="#">Steadys Solution </a>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <div class="container mt-5" id="content-container">
+    <div>
+
+    </div>    
+   
+    <!-- Script -->
+    <script src="/node_modules/chart.js/dist/chart.umd.js"></script>
+    <script type="module" src="./scripts/traffic.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+</body>
+</html>
