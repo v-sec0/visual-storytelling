@@ -1,0 +1,23 @@
+{
+  "name": "visual-storytelling",
+  "version": "1.0.0",
+  "description": "A site that provides a story through data visualization",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/v-sec0/visual-storytelling.git"
+  },
+  "author": "Levon Watkins Jr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/v-sec0/visual-storytelling/issues"
+  },
+  "homepage": "https://github.com/v-sec0/visual-storytelling#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "chart.js": "^4.4.0"
+  }
+}
