@@ -5,14 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visual Story Telling</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="src/main.css">
 </head>
 <body>
 
     <!-- Making container for data -->
-    <div class="container" id="title-container">Hello this is a placeholder</div>
-
-
+    <div class="container" id="main-container">
+        <div class="row text-center my-5" id="title-row">
+            <h1 id="title-text">The Impact of the ALEA in 2022</h1>
+        </div>
+        <div class="row" id="first-section">
+            <div class="col" id="info-section-1">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, alias eaque. Saepe dolorum officiis cum laudantium adipisci quasi incidunt, suscipit iure impedit, quod dicta et praesentium similique voluptates sint harum?
+            </div>
+            <div class="col" id="graph-section-1">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+    </div> 
+   
     <!-- Script -->
     <script src="scripts/script.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/chart.js/dist/chart.js"></script>
 </body>
 </html>
