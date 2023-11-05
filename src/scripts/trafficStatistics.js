@@ -23,15 +23,15 @@
           display: true,
           text: "Types of Traffic-related Injuries in 2022",
           font: {
-            family: "Fira Sans",
-            size: 13,
+            family: "Nunito",
+            size: 16,
           },
           color: '#FFF'
         },
         legend: {
           labels: {
             font: {
-              family: "Fira Sans",
+              family: "Nunito",
               size: 16,
             },
           },

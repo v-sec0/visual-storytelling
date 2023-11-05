@@ -18,7 +18,7 @@
       labels: data.map((row) => row.speed),
       datasets: [
         {
-          label: "Likeihood of losing control",
+          label: "Danger Level",
           labels: "Likeihood of losing control",
           data: data.map((row) => row.control),
         },
@@ -30,6 +30,17 @@
           display: true,
           text: "Data is not representative of any factual study. For visual representation only.",
           position: "bottom",
+          font: {
+            family: 'Nunito'
+          }
+        },
+        legend: {
+          labels: {
+            font: {
+              family: "Nunito",
+              size: 16,
+            },
+          },
         },
       },
     },

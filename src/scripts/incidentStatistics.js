@@ -26,15 +26,15 @@
           text: 'Top 5 causes of traffic incidents in 2022',
           position: 'bottom',
           font: {
-            size: 13,
-            family: "Fira Sans",
+            size: 16,
+            family: "Nunito",
           },
           color: '#FFF',
         },
         legend: {
           labels: {
             font: {
-              family: "Fira Sans",
+              family: "Nunito",
               size: 16,
             },
           },

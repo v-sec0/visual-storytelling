@@ -26,10 +26,18 @@
           text: "Top 5 Citations Issued for 2022",
           position: 'bottom',
           font: {
-            family: "Fira Sans",
-            size: 13,
+            family: "Nunito",
+            size: 16,
           },
           color: '#FFF',
+        },
+        legend: {
+          labels: {
+            font: {
+              family: "Nunito",
+              size: 16,
+            },
+          },
         },
       },
     },
