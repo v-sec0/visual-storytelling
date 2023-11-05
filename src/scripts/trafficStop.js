@@ -8,7 +8,7 @@
   ];
 
   new Chart($("#trafficStop"), {
-    type: "doughnut",
+    type: "pie",
     data: {
       labels: data.map((row) => row.citation),
       datasets: [
