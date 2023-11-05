@@ -1,27 +1,42 @@
-(async function() {
-    const data = [
-      { year: 2010, count: 10 },
-      { year: 2011, count: 20 },
-      { year: 2012, count: 15 },
-      { year: 2013, count: 25 },
-      { year: 2014, count: 22 },
-      { year: 2015, count: 30 },
-      { year: 2016, count: 28 },
-    ];
-  
-    new Chart(
-      $("#trafficStatistics"),
-      {
-        type: 'pie',
-        data: {
-          labels: data.map(row => row.year),
-          datasets: [
-            {
-              label: 'Acquisitions by year',
-              data: data.map(row => row.count)
-            }
-          ]
-        }
-      }
-    );
-  })();
+
+(async function () {
+  const data = [
+    { classOfCrash: "Fatal", count: 587 },
+    { classOfCrash: "Non-fatal", count: 10445 },
+    { classOfCrash: "Unharmed", count: 21272 },
+  ];
+
+  new Chart($("#trafficStatistics"), {
+    type: "pie",
+    data: {
+      labels: data.map((row) => row.classOfCrash),
+      datasets: [
+        {
+          label: "Number of victims",
+          data: data.map((row) => row.count),
+        },
+      ],
+    },
+    options: {
+      plugins: {
+        title: {
+          display: true,
+          text: "Types of Traffic-related Injuries in 2022",
+          font: {
+            family: "Fira Sans",
+            size: 25,
+          },
+          color: '#FFF'
+        },
+        legend: {
+          labels: {
+            font: {
+              family: "Fira Sans",
+              size: 16,
+            },
+          },
+        },
+      },
+    },
+  });
+})();

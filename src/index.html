@@ -1,41 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Visual Story Telling</title>
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="/node_modules/aos/dist/aos.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
     <!-- Navbar -->
-    <nav class="navbar bg-dark sticky-top">
-        <div class="container-fluid d-flex justify-content-center">
-            <div class="navbar-brand text-bg-dark">
-                <h1 class="fs-1">Dangers on the Highway 🚦</h1>
-            </div>
+    <nav class="navbar bg-dark sticky-top" data-aos="fade-down" data-aos-once="true">
+      <div class="container-fluid d-flex justify-content-center">
+        <div class="navbar-brand text-bg-dark">
+          <h1 class="fs-1">Dangers on the Highway 🚦</h1>
         </div>
+      </div>
     </nav>
 
     <!-- Main Container -->
     <div class="container" id="content-container">
-        <div class="row content-row p-5 mb-5 justify-content-center">
-            <div class="col-12 mb-5 text-center">
-                <h3 class="main-text">Every year, millions of American traverse the highway in order to reach some destination</h3>
-                <h3 class="sub-text">Out of that million, thousands find themselves in traffic related incidents.</h3>
-            </div>            
-            <div class="col-5 align-content-center">
-                <canvas id="trafficStatistics"></canvas>
-            </div>            
-        </div>          
+      <div class="row content-row p-5 justify-content-center" id="intro-row">
+        <div class="col-12 mb-5 text-center" data-aos="fade-left">
+          <h3 class="main-text">
+            Every year, millions of American traverse the highway in order to
+            reach some destination
+          </h3>
+          <h3 class="sub-text">
+            Out of that million, thousands of Alabamians find themselves in
+            traffic related incidents.
+          </h3>
+        </div>
+        <div class="col-5 align-content-center" data-aos="fade-up">
+          <canvas id="trafficStatistics"></canvas>
+        </div>
+      </div>
+      <div class="row content-row p-5 justify-content-center">
+        <div class="col-5 align-content-center" data-aos="fade-down">
+          <canvas id="incidentStatistics"></canvas>
+        </div>
+        <div class="col-12 mt-5 text-center">
+          <h3 class="main-text" data-aos="fade-right">
+            While there is no one cause for these incidents, there is a trend.
+          </h3>
+          <h3 class="sub-text" data-aos="fade-left">
+            It's not obvious but all of these incidents have an increased likihood of occurance under this specific circumstance.
+          </h3>
+        </div>
+      </div>
     </div>
-    
+
     <!-- Script -->
     <script src="/node_modules/chart.js/dist/chart.umd.js"></script>
-    <script type="module" src="./scripts/traffic.js"></script>
+    <script type="module" src="./scripts/incidentStatistics.js"></script>
     <script type="module" src="./scripts/trafficStatistics.js"></script>
+    <script src="/node_modules/aos/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-</body>
+  </body>
 </html>
