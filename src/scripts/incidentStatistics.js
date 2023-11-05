@@ -8,6 +8,8 @@
     { causeOfCrash: "Over the speed limit", count: 1608 },
   ];
 
+  const colors = [ "#9E9780", "#F2DFA0", "#F27C85", "#A0F2B3", "#A0ABF2"];
+
   new Chart($("#incidentStatistics"), {
     type: "doughnut",
     data: {
@@ -16,6 +18,7 @@
         {
           label: "Number of incidents",
           data: data.map((row) => row.count),
+          backgroundColor: colors,
         },
       ],
     },

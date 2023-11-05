@@ -8,6 +8,8 @@
     { citation: "No Insurance", count: 17051 },
   ];
 
+  const colors = ["#F27C85", "#F2DFA0", "#A0ABF2", "#A0F2B3", "#9E9780"];
+
   new Chart($("#trafficStop"), {
     type: "pie",
     data: {
@@ -16,6 +18,7 @@
         {
           label: "Number of citations",
           data: data.map((row) => row.count),
+          backgroundColor: colors,
         },
       ],
     },

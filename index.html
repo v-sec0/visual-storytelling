@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./src/styles/main.css" />
     <link rel="stylesheet" href="./node_modules/aos/dist/aos.css" />
     <link rel="stylesheet" href="./src/styles/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
   </head>
   <body>
     <!-- Main Container -->
@@ -22,9 +23,10 @@
             traffic related incidents.
           </h3>
         </div>
-        <div class="col-5 align-content-center" data-aos="fade-up">
+        <div class="col-5 align-content-center" id="anchorStats" data-aos="fade-up">
           <canvas id="trafficStatistics"></canvas>
         </div>
+        <div class="col-12 mt-5 text-center fs-5" data-aos="fade-up" data-aos-anchor="#anchorStats">Scroll Down <i class="bi bi-caret-down-fill"></i></div>
       </div>
       <div class="row content-row p-5 justify-content-center">
         <div class="col-5 align-content-center mt-5" style="width: 525px"data-aos="fade-down">
@@ -56,7 +58,10 @@
         <div class="col-6 align-content-center mt-5" data-aos="fade-up">
           <img src="./src/images/alea-logo.png" alt="ALEA Logo" style=" width: 600px;border-radius: 15px; border: white solid 5px; background-color: white;">
         </div>
-        <div class="col-12 mt-5 text-center" data-aos="fade-down">
+        <div class="col-12 text-center mt-3">
+          <p>All data was gathered from the <a href="https://www.alea.gov/sites/default/files/inline-files/ALEA%20Annual%20Report%20FY2022.pdf" target="_blank">Annual ALEA Report FY2022</a></p>
+        </div>
+        <div class="col-12 mt-3 text-center" data-aos="fade-down">
           <h3 class="main-text">Luckily, the brave troopers at the Alabama Law Enforcement Agency are keeping a watchful eye</h3>
           <h3 class="sub-text">And making our highways just a little safer.</h3>
         </div>

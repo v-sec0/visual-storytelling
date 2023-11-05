@@ -6,6 +6,8 @@
     { classOfCrash: "Unharmed", count: 21272 },
   ];
 
+  const colors = ["#F27C85", "#F2DFA0", "#A0ABF2", "#A0F2B3", "#9E9780"];
+
   new Chart($("#trafficStatistics"), {
     type: "pie",
     data: {
@@ -14,6 +16,7 @@
         {
           label: "Number of victims",
           data: data.map((row) => row.count),
+          backgroundColor: colors,
         },
       ],
     },

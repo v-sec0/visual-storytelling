@@ -11,6 +11,9 @@
     { speed: "100 MPH", control: 90 },
     { speed: "105 MPH", control: 95 },
   ];
+  
+  const color = ["#F27C85"]
+
 
   new Chart($("#speedControl"), {
     type: "line",
@@ -21,6 +24,8 @@
           label: "Danger Level",
           labels: "Likeihood of losing control",
           data: data.map((row) => row.control),
+          backgroundColor: color,
+          borderColor: color
         },
       ],
     },
