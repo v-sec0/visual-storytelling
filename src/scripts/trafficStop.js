@@ -1,4 +1,3 @@
-import { Chart } from "../../node_modules/chart.js/auto";
 
 (async function () {
   const data = [
