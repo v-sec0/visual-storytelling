@@ -9,24 +9,15 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar bg-dark sticky-top" data-aos="fade-down" data-aos-once="true">
-      <div class="container-fluid d-flex justify-content-center">
-        <div class="navbar-brand text-bg-dark">
-          <h1 class="fs-1">Dangers on the Highway 🚦</h1>
-        </div>
-      </div>
-    </nav>
-
     <!-- Main Container -->
     <div class="container" id="content-container">
       <div class="row content-row p-5 justify-content-center" id="intro-row">
-        <div class="col-12 mb-5 text-center" data-aos="fade-left">
-          <h3 class="main-text">
+        <div class="col-12 mb-5 text-center">
+          <h3 class="main-text" data-aos="fade-left">
             Every year, millions of American traverse the highway in order to
             reach some destination
           </h3>
-          <h3 class="sub-text">
+          <h3 class="sub-text" data-aos="fade-right">
             Out of that million, thousands of Alabamians find themselves in
             traffic related incidents.
           </h3>
@@ -36,24 +27,51 @@
         </div>
       </div>
       <div class="row content-row p-5 justify-content-center">
-        <div class="col-5 align-content-center" data-aos="fade-down">
+        <div class="col-5 align-content-center mt-5" style="width: 525px"data-aos="fade-down">
           <canvas id="incidentStatistics"></canvas>
         </div>
         <div class="col-12 mt-5 text-center">
           <h3 class="main-text" data-aos="fade-right">
-            While there is no one cause for these incidents, there is a trend.
+            There are many difference reasons for why an traffic incident may
+            occur.
           </h3>
           <h3 class="sub-text" data-aos="fade-left">
-            It's not obvious but all of these incidents have an increased likihood of occurance under this specific circumstance.
+            But there is one underlying issue that can increase the likeihood an
+            accident occuring.
           </h3>
+        </div>
+      </div>
+      <div class="row content-row p-5 justify-content-center">
+        <div class="col-11 align-content-center mt-5" data-aos="fade-down">
+          <canvas id="speedControl"></canvas>
+        </div>
+        <div class="col-12 mt-5 text-center">
+          <h3 class="main-text" data-aos="fade-left">Speeding.</h3>
+          <h3 class="sub-text" data-aos="fade-up">
+            It's a normal occurance for many people.
+          </h3>
+        </div>
+      </div>
+      <div class="row content-row p-5 justify-content-center">
+        <div class="col-6 align-content-center mt-5" data-aos="fade-up">
+          <img src="./images/alea-logo.png" alt="ALEA Logo" style=" width: 600px;border-radius: 15px; border: white solid 5px; background-color: white;">
+        </div>
+        <div class="col-12 mt-5 text-center" data-aos="fade-down">
+          <h3 class="main-text">Luckily, the brave men and women at the ALEA are keeping a watchful eye</h3>
+          <h3 class="sub-text">And keeping the streets safe</h3>
+        </div>
+        <div class="col-5 align-content-center" data-aos="fade-left">
+          <canvas id="trafficStop"></canvas>
         </div>
       </div>
     </div>
 
     <!-- Script -->
     <script src="/node_modules/chart.js/dist/chart.umd.js"></script>
+    <script type="module" src="./scripts/trafficStop.js" ></script>
     <script type="module" src="./scripts/incidentStatistics.js"></script>
     <script type="module" src="./scripts/trafficStatistics.js"></script>
+    <script type="module" src="./scripts/speedControl.js"></script>
     <script src="/node_modules/aos/dist/aos.js"></script>
     <script>
       AOS.init();
@@ -62,3 +80,4 @@
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
   </body>
 </html>
+

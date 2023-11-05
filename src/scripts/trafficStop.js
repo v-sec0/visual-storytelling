@@ -7,8 +7,8 @@
     { citation: "No Insurance", count: 17051 },
   ];
 
-  new Chart(document.getElementById("citationPieChart"), {
-    type: "pie",
+  new Chart($("#trafficStop"), {
+    type: "doughnut",
     data: {
       labels: data.map((row) => row.citation),
       datasets: [
@@ -23,6 +23,12 @@
         title: {
           display: true,
           text: "Top 5 Citations Issued for 2022",
+          position: 'bottom',
+          font: {
+            family: "Fira Sans",
+            size: 13,
+          },
+          color: '#FFF',
         },
       },
     },
