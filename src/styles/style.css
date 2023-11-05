@@ -1,4 +1,39 @@
-#content-container{
-    width: 100%;
-    height: 100vh;
+/* Imports */
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+/* Styles for ALL */
+*{
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    background-color: rgb(27, 27, 27);
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    top: 0;
+}
+
+/* Styles for Title */
+#fast-link {color: rgb(103, 199, 103);}
+#fast-link:hover {color: rgb(33, 129, 33);}
+#slow-link {color: rgb(197, 87, 87);}
+#slow-link:hover {color: rgb(127, 17, 17);}
+
+/* Styling for Main Container */
+.content-row {
+    margin-top: 75px;
+    color: white;
+}
+
+.main-text {
+    font-size: 45px;
+}
+
+.sub-text {
+    margin-top: 30px;
+}
+

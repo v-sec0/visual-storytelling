@@ -4,34 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visual Story Telling</title>
-    <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
 
-    <!-- Making container for data -->
-    <div class="container my-5 sticky-top" id="title-container">
-        <div class="row text-center" id="title-row">
-            <h1 id="title-text">Danger on the Highway!</h1>
+    <!-- Navbar -->
+    <nav class="navbar bg-dark sticky-top">
+        <div class="container-fluid d-flex justify-content-center">
+            <div class="navbar-brand text-bg-dark">
+                <h1 class="fs-1">Dangers on the Highway 🚦</h1>
+            </div>
         </div>
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link active" id="fast-link" aria-current="page" href="#">Fast Facts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="slow-link" href="#">Steadys Solution </a>
-            </li>
-        </ul>
-    </div>
-    <br>
-    <div class="container mt-5" id="content-container">
-    <div>
+    </nav>
 
-    </div>    
-   
+    <!-- Main Container -->
+    <div class="container" id="content-container">
+        <div class="row content-row p-5 mb-5 justify-content-center">
+            <div class="col-12 mb-5 text-center">
+                <h3 class="main-text">Every year, millions of American traverse the highway in order to reach some destination</h3>
+                <h3 class="sub-text">Out of that million, thousands find themselves in traffic related incidents.</h3>
+            </div>            
+            <div class="col-5 align-content-center">
+                <canvas id="trafficStatistics"></canvas>
+            </div>            
+        </div>          
+    </div>
+    
     <!-- Script -->
     <script src="/node_modules/chart.js/dist/chart.umd.js"></script>
     <script type="module" src="./scripts/traffic.js"></script>
+    <script type="module" src="./scripts/trafficStatistics.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
 </body>
